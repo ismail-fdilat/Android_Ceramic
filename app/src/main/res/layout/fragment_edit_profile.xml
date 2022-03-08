@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.EditProfileFragment">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mypfedit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+
+            <TextView
+                android:id="@+id/icon_name"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:background="@color/colorappbar"
+                android:textColor="@color/white"
+                android:text="@string/tv_mypf" />
+
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textAllCaps="true"
+                android:gravity="right"
+                android:padding="@dimen/size_14"
+                android:background="@color/colorappbar"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_mypfedit"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#419C1313"
+                android:backgroundTintMode="src_over"
+                android:background="@drawable/pfbanner"
+                >
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+              >
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="@dimen/size_10"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/imv_addpf"
+                    app:srcCompat="@drawable/ic_userpf"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"/>
+
+                <ImageView
+                    android:layout_width="@dimen/size_26"
+                    android:layout_height="@dimen/size_26"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/ic_edit"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:visibility="visible"
+                    android:layout_alignRight="@+id/imv_addpf"
+                    android:id="@+id/imv_addpficon" />
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/title_fname"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/darkgrey"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_30"
+                android:text="@string/title_fullname"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_fulname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bg"
+                android:drawableRight="@drawable/ic_create_black_24dp"
+                android:ems="15"
+                android:maxLength="25"
+                android:vmSafeMode="true"
+                android:fontFamily="@font/betm"
+                android:hint="@string/title_fullname"
+                android:inputType="text"
+                android:padding="@dimen/size_14"
+                android:gravity="left"
+                android:drawablePadding="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_7"
+                android:textColor="@color/darkgrey"
+                android:textColorHint="@color/lgrey"
+                android:textSize="@dimen/size_14" />
+
+
+            <TextView
+                android:id="@+id/title_email"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/darkgrey"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/title_email"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bg"
+                android:drawableRight="@drawable/ic_create_black_24dp"
+                android:ems="15"
+                android:maxLength="30"
+                android:fontFamily="@font/betm"
+                android:hint="@string/title_email"
+                android:vmSafeMode="true"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/size_14"
+                android:gravity="left"
+                android:drawablePadding="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_7"
+                android:textColor="@color/darkgrey"
+                android:textColorHint="@color/lgrey"
+                android:textSize="@dimen/size_14" />
+
+
+
+
+            <TextView
+                android:id="@+id/title_mobile"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/darkgrey"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/title_mobile"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bg"
+                android:drawableRight="@drawable/ic_create_black_24dp"
+                android:fontFamily="@font/betm"
+                android:hint="@string/title_mobile"
+                android:inputType="number"
+                android:maxLength="15"
+                android:padding="@dimen/size_14"
+                android:gravity="left"
+                android:vmSafeMode="true"
+                android:drawablePadding="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_7"
+                android:layout_marginBottom="@dimen/size_14"
+                android:textColor="@color/darkgrey"
+                android:textColorHint="@color/lgrey"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:padding="@dimen/size_14"
+                android:background="@color/colorappbar"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_10"
+                android:text="@string/title_update"
+
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context=".activities.LanguageSelect">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_one_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_5"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_18"
+                android:fontFamily="@font/betm"
+                android:text="@string/select_language"
+                android:gravity="center"
+                android:textColor="@color/darkgrey"/>
+            <TextView
+                android:id="@+id/tv_Larabic"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_language1"
+                android:background="@color/colorappbar"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/size_10"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_10"
+                android:fontFamily="@font/betm"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/white"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_Lenglish"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_language2"
+                android:background="@color/colorappbar"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/size_10"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_20"
+                android:fontFamily="@font/betm"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_18"
+                android:fontFamily="@font/betm"
+                android:text="@string/back"
+                android:gravity="center"
+                android:textColor="@color/darkgrey"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

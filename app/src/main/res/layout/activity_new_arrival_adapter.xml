@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/ll_subsubcat"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/size_3"
+    android:layout_marginTop="@dimen/size_14"
+    android:layout_marginBottom="@dimen/size_14"
+    android:layout_marginRight="@dimen/size_3"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imv_new_arrival"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackground"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_arrivalname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/betm"
+            android:text="@string/tv_titlesubcategry"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_5"
+        android:weightSum="1">
+
+        <TextView
+
+            android:id="@+id/tv_newarofferedprice"
+            android:layout_width="0dp"
+            android:gravity="left"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/betm"
+            android:text="SAR 500"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/colorappbar"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_pricenewarrival"
+            android:layout_width="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/betm"
+            android:text="SAR 500"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginBottom="@dimen/size_3"
+       >
+
+
+        <RatingBar
+            android:id="@+id/ratingBar_newar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_alignParentLeft="true"
+            android:rating="3.5"
+            android:layout_centerInParent="true"
+            android:theme="@style/RatingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            />
+
+
+        <ImageView
+            android:id="@+id/imv_unfav_newar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:gravity="right|center"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_wishlistheeart" />
+
+
+        <ImageView
+            android:id="@+id/imv_fav_newar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_wishlistfill"   />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

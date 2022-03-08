@@ -1,0 +1,379 @@
+<resources>
+    <string name="app_name">AlSaadHomeApp</string>
+    <string name="no_inernet">لا يوجد اتصال بالإنترنت</string>
+    <string name="instagram">انستغرام</string>
+    <string name="oldreq">كلمة المرور القديمة مطلوبة</string>
+    <string name="addanotherfloor">أضف طابقًا آخر</string>
+    <string name="Calculate">احسب</string>
+    <string name="Reset">إعادة ضبط</string>
+    <string name="totalcartoons">مجموع الكراتين</string>
+    <string name="totalprice">إجمالي سعر الكراتين</string>
+    <string name="per_cartoon"> في الكرتون</string>
+
+    <string name="tax">ضريبة</string>
+
+    <string name="percover"> لكل غطاء رسوم متحركة</string>
+
+    <string name="enter_qauntity"> الكمية</string>
+
+
+
+    <string name="enter_sellername">Seller Name</string>
+    <string name="seller_date">Seller date</string>
+    <string name="enter_day_adddate">Enter Day Add Date</string>
+
+
+    <string name="enter_yourcontact">أدخل رقم الاتصال الخاص بك</string>
+    <string name="enter_bank">أدخل اسم البنك</string>
+    <string name="enter_account"> أدخل رقم الحساب</string>
+    <string name="enter_ifsc">أدخل رمز IFSC</string>
+    <string name="enter_shopname">أدخل اسم المحل</string>
+    <string name="enter_shipaddress">أدخل عنوان الشحن</string>
+    <string name="register_seller">إنشاء حساب البائع</string>
+    <string name="choosefile">اختر ملف</string>
+
+
+
+    <string name="cera">بلاط سيراميك للارضيات</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="no_order">لم يتم العثور على طلب</string>
+    <string name="itemscount">العنصر</string>
+    <string name="add_review">إضافة مراجعة</string>
+    <string name="tv_changepassword">تغيير كلمة السر</string>
+    <string name="title_oldpassword">كلمة المرور القديمة</string>
+    <string name="calculator">آلة حاسبة</string>
+    <string name="de">حاسبة السيراميك \ n انقر لحساب \ n كمية السيراميك حسب المنطقة</string>
+
+
+
+
+    <string name="enteroldpassword">أدخل كلمة المرور القديمة</string>
+
+
+
+
+
+
+    <string name="title_correct">الرجاء إدخال كلمة المرور الصحيحة</string>
+
+
+    <string name="email">البريد الإلكتروني</string>
+    <string name="pass">كلمة السر</string>
+    <string name="cpass">تأكيد كلمة السر</string>
+    <string name="uswrname">الإسم بالكامل </string>
+    <string name="frpass">هل نسيت كلمة السر ؟</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="signup">ليس لديك حساب ؟ تفضل بالتسجيل</string>
+    <string name="mobilenum">رقم الموبايل </string>
+    <string name="register">إنشاء حساب جديد</string>
+    <string name="msg_frpass">أدخل بريدك الإلكتروني لإرسال رابط إعادة كلمة السر </string>
+    <string name="title_frpass">نسيت كلمة السر</string>
+    <string name="next">التالي</string>
+    <string name="tv_otp1">تأكد من الرمز السري</string>
+    <string name="tv_otp2">أدخل الرمز السري الذي تم إرساله للايميل</string>
+    <string name="tv_otp3">الرمز السري</string>
+    <string name="submit">إرسال</string>
+    <string name="tv_chanpass1">تغيير كلمة السر</string>
+    <string name="tv_chanpass2">كلمة السر الجديدة</string>
+    <string name="tv_chanpass3">تأكيد كلمة السر</string>
+    <string name="tv_already">لدي حساب مسبق</string>
+    <string name="tv_loginmain">تسجيل الدخول</string>
+
+
+    <string name="tv_search">البحث</string>
+    <string name="tv_genuine">أصلي   100%</string>
+    <string name="tv_cashn">الدفع عند الإستلام</string>
+    <string name="tv_return">سرعة في التوصيل</string>
+    <string name="tv_titlebrands">ماركات مميزة</string>
+
+    <string name="tv_home">الرئيسية</string>
+    <string name="tv_category">الفئات</string>
+    <string name="tv_wishlist">قائمة المفضلات</string>
+    <string name="tv_cart">عربة التسوق</string>
+    <string name="tv_acc">حسابي</string>
+    <string name="tv_titlecategry">الفئات</string>
+    <string name="tv_titlesubcategry">أقسام الفئات </string>
+    <string name="tv_titleproducts">المنتجات </string>
+    <string name="tv_titledescriptio">وصف المنتج</string>
+    <string name="tv_productrating">تصنيف المنتج</string>
+    <string name="tv_surfaceshape">شكل السطح</string>
+    <string name="type_of_cuttingthickness">نوع سمك القطع</string>
+    <string name="country_of_manufacture">بلد الصنع</string>
+    <string name="thicknessm">سمك (مم)</string>
+
+    <string name="thecolor">اللون</string>
+    <string name="thesize">الحجم</string>
+
+
+
+
+
+
+
+    <string name="tv_titlereview">التقييم</string>
+    <string name="tvnodata">عفوا ! لا نتيجة</string>
+    <string name="tvinstock">4 تبقى في المستودع</string>
+    <string name="tvaddcart">أضف إلى عربة التسوق</string>
+    <string name="tvmovecart">أضف إلى عربة التسوق</string>
+    <string name="tvwishlist">قائمة المفضلات</string>
+
+    <string name="tv_titlePrice">السعر</string>
+    <string name="tv_titlesizw">القياس</string>
+    <string name="tv_titlebrand">الماركة</string>
+    <string name="tv_titledetail">عرض التفاصيل</string>
+
+
+    <string name="tv_google">جوجل</string>
+
+    <string name="tv_mypf">معلوماتي</string>
+    <string name="tv_lan">اللغة</string>
+    <string name="tv_myacc">حسابي</string>
+    <string name="tv_myorder">طلباتي</string>
+    <string name="tv_addbook">عنواني </string>
+    <string name="tv_tkorder">متابعة الطلبية</string>
+    <string name="tv_call">إتصل بنا</string>
+    <string name="tv_contact">تواصل معنا</string>
+    <string name="tv_rate">تقييم التطبيق</string>
+    <string name="title_activity_home">الصفحة الرئيسية</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_dashboard">الفئات</string>
+    <string name="title_wishlist">قائمة المفضلات</string>
+    <string name="title_cart">عربة التسوق</string>
+    <string name="title_Account">حسابي</string>
+    <string name="title_comments">التعليقات</string>
+    <string name="title_send">إرسال</string>
+    <string name="title_size">القياس</string>
+    <string name="title_track">متابعة الطلبية</string>
+
+
+
+
+    <string name="title_item">المجموع الفرعي</string>
+    <string name="title_bagtitle">حقيبة المجموع</string>
+    <string name="title_bagamount">SAR 250</string>
+
+    <string name="title_qty">الكمية</string>
+    <string name="title_price">درهم</string>
+
+
+    <string name="tv_remove">حذف</string>
+    <string name="tv_movetowishlist">أضف إلى قائمة المفضلات</string>
+    <string name="tv_addmoretowishlist">أضف المزيد لقائمة المفضلات</string>
+    <string name="tv_pricedetails">تفاصيل السعر</string>
+    <string name="title_subtotl">المبلغ الفرعي</string>
+    <string name="tv_checkout">الدفع</string>
+    <string name="title_confirm">تأكيد الرفع</string>
+    <string name="title_AllAdress">تفاصيل العنوان </string>
+    <string name="title_forgotpass">نسيت كلمة السر</string>
+    <string name="title_forgotpass1">نرجو إدخال بريدك الإلكتروني المسجل لإرسال كلة السر الجديدة</string>
+    <string name="title_select">إختر</string>
+    <string name="title_addadress">أضف عنوان</string>
+    <string name="title_done">تم</string>
+
+    <string name="title_otp1">تحقق من الرمز السري</string>
+    <string name="title_otp2">أدخل الرمز السري المرسل في الإيميل</string>
+    <string name="title_otp3">أدخل الرمز السري المرسل</string>
+
+    <string name="title_Changpas1">تغيير كلمة السر</string>
+    <string name="title_Changpas2">أدخل كلمة السر</string>
+    <string name="title_Changpas3">تأكيد كلمة السر</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_fullname">الإسم بالكامل</string>
+    <string name="title_email">البريد الإلكتروني</string>
+    <string name="title_mobile">رقم الموبايل</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_editpf">تعدبل ملفك الشخصي</string>
+    <string name="title_update">تحديث</string>
+
+
+    <string name="otp_successfully_verify">الرمز السري تم توثيقه</string>
+    <string name="enternewpassword">أدخل كلمة سر جديدة</string>
+    <string name="password_success_update">Pتم إعادة تعيين كلمة السر بنجاح</string>
+    <string name="enter_your_confirm_password">تأكيد كلمة السر</string>
+    <string name="password_not_match">كلمة السر غير متطابقة </string>
+
+    <string name="online">الدفع الالكتروني</string>
+
+
+
+
+
+    <string name="btn_logout_from_google">تسجيل الحروج من جوجل</string>
+    <string name="btn_revoke_access">إبطال الوصول</string>
+
+    <string name="no_data_found">عفوا ! لا نتيجة</string>
+    <string name="items">المنتجات</string>
+    <string name="no_product_added_to_cart">لم يتم إضافة أي منيج </string>
+
+    <string name="take_photo">قم بتصوير صورة</string>
+    <string name="choose_from_libary">اختر صورة من معرض الصور</string>
+    <string name="cancel">إلغاء</string>
+    <string name="add_photo">أضف صورة </string>
+    <string name="enter_valid_email">الرجال إدخال إيميل صحيح</string>
+
+
+    <string name="tv_language1">اللغة العربية</string>
+    <string name="tv_language2">اللغة الإنجليزية</string>
+    <string name="back">الرجوع</string>
+    <string name="select_language">إختر اللغة</string>
+
+    <string name="title_shippingadd">عنوان التوصيل</string>
+    <string name="title_ordersum">إظهار تفاصيل الطلب</string>
+    <string name="title_total">المجموع</string>
+    <string name="title_proceedtopay">المضي قدما للدفع</string>
+
+    <string name="title_Address">عنوان الشحن</string>
+    <string name="thecity">مدينة</string>
+
+    <string name="title_shippingcityr">مدينة الشحن مطلوبة</string>
+    <string name="titile_shippingarea">منطقة الشحن مطلوبة</string>
+
+    <string name="deliveryby">التوصيل بواسطه</string>
+
+
+
+    <string name="title_shippingcity">مدينة الشحن</string>
+    <string name="title_area">منطقة الشحن</string>
+    <string name="title_city">المدينة</string>
+    <string name="title_zipcode">الرمز البريدي</string>
+    <string name="title_country">الدولة</string>
+    <string name="titlename">الإسم</string>
+    <string name="title_edit">تعديل</string>
+
+    <string name="delivery">التوصيل</string>
+    <string name="order_detail">مجموع الطلب</string>
+    <string name="title_getintouch">تواصل معنا </string>
+
+    <string name="Web_Client_Id">854286222033-8832jk0rd15lbb0v3eta4phev66hjq8i.apps.googleusercontent.com</string>
+    <string name="tv_titlemore">عرض المزيد..</string>
+    <string name="tv_titleaddrv">إضافة إلى استعراض
+</string>
+    <string name="tv_titlerate">كيف تقيم \ n تطبيقنا؟</string>
+    <string name="tv_titleaddrv1">اكتب تعليقاتك هنا ....</string>
+
+
+
+
+    <string name="applink">Call us at <a href="+91 1234567890">+91 1234567890</a></string>
+    <string name="permite_permisssion">يرجى منح الأذونات المطلوبة. </string>
+
+
+    <string name="apply">تطبيق </string>
+    <string name="today_s_deal">صفقة اليوم </string>
+    <string name="recommended_products">المنتجات الموصى بها </string>
+    <string name="new_arrivals">وصل حديثا</string>
+    <string name="change_or_add_address">تغيير أو تحرير العنوان </string>
+    <string name="tv_deliveryes">تقديرات التسليم </string>
+
+    <string name="title_notification">إشعارات</string>
+    <string name="title_continue">مواصلة التسوق </string>
+    <string name="title_checkout">الدفع</string>
+    <string name="title_Guest">زائر الرجاء تسجيل الدخول </string>
+    <string name="title_Guest1">مرحبا بالضيف! </string>
+    <string name="title_Guest2">ضيف الشحن </string>
+    <string name="title_Guest3">أو</string>
+    <string name="title_endsin">ينتهي</string>
+
+
+    <!-- TODO: validation -->
+    <string name="title_Emailisrequired">البريد الالكتروني مطلوب </string>
+    <string name="title_passwordisrequired">كلمة المرور مطلوبة</string>
+    <string name="title_userisrequired">اسم المستخدم مطلوب</string>
+    <string name="title_cpassisrequired">يرجى تأكيد كلمة المرور!</string>
+    <string name="title_mobileisrequired">رقم الجوال مطلوب</string>
+    <string name="title_adressisrequired">العنوان مطلوب </string>
+    <string name="title_cityisrequired">يرجى تأكيد المدينة!</string>
+    <string name="title_zipcodeisrequired">يُرجى تأكيد الرمز البريدي!</string>
+    <string name="title_enterotp">أدخل OTP</string>
+    <string name="title_whatsapp">تواصل على الواتساب</string>
+    <string name="title_otpst">"تم إرسال OTP إلى عنوان بريدك الإلكتروني المسجل "</string>
+    <string name="title_otpst1">"معرف البريد الإلكتروني هذا غير مسجل يرجى إدخال عنوان بريد إلكتروني آخر "</string>
+    <string name="title_otpst2">حسنا</string>
+    <string name="title_confirmn">تؤكد</string>
+    <string name="title_add">أضف</string>
+    <string name="tv_cartdialog1">"هل أنت متأكد أنك تريد إزالة هذا المنتج "</string>
+
+    <string name="order_successful">"نجاح الأمر !! "</string>
+    <string name="tv_confirm1">تم تقديم طلبك بنجاح</string>
+    <string name="next_payment_info">"معلومات الدفع التالية "</string>
+    <string name="tv_rateapp">انقر على عدد النجوم لتقييم تطبيقنا</string>
+    <string name="close">أغلق</string>
+    <string name="tv_internet">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="tv_whatsappnum">رقم واتس اب</string>
+    <string name="shopping_cart">عربة التسوق</string>
+    <string name="cash_on_delivery">الدفع عند الاستلام</string>
+    <string name="place_order">تأكيد الطلب </string>
+    <string name="flat_shipping_rate">سعر شحن ثابت</string>
+    <string name="uae_vat">UAE_VAT</string>
+    <string name="product_name">اسم المنتج</string>
+    <string name="quantity">كمية</string>
+    <string name="price">السعر</string>
+    <string name="tv_exit">هل تود الخروج</string>
+    <string name="tv_yes">نعم</string>
+    <string name="tv_no">لا</string>
+
+
+    <string name="Productavailablesoon">سيتوفر قريباً</string>
+
+    <string name="OutOfStock">غير متوفر حاليا</string>
+    <string name="InStock">في المخزن</string>
+
+    <string name="subzero">المجموع الفرعي (0)</string>
+
+    <string name="deliverttime">التوصيل خلال ٢ - ٤ أيام عمل</string>
+
+    <string name="time_s_up">انتهى الوقت!!</string>
+
+
+    <string name="productalready">تمت إضافة المنتج بالفعل</string>
+    <string name="productadded">تم اضافة المنتج لعربة التسوق</string>
+    <string name="additem">إضافة عنصر في سلة التسوق</string>
+    <string name="oneqty">مطلوب كمية واحدة</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="unavailablestck">البند غير متوفر في المخزون</string>
+    <string name="areyusure">هل أنت متأكد من أنك تريد الانتقال إلى قائمة الرغبات</string>
+    <string name="firstlogin">يرجى تسجيل الدخول أولاً لإضافة منتجات إلى قائمة الرغبات</string>
+    <string name="removedwish">تمت إزالته من قائمة الرغبات</string>
+
+    <string name="chckout">الدفع</string>
+    <string name="seller">تاجر</string>
+
+    <string name="you_already_khow">أنت تعرف بالفعل \ n حجم المساحة الإجمالية</string>
+    <string name="floor_measure">الطابق \ n القياسات</string>
+    <string name="floor_measuretwo">قياسات الأرضية</string>
+    <string name="enter_your_floor_dimen">أدخل أبعاد الأرضية الخاصة بك (بالأمتار)</string>
+
+
+    <string name="paymentmethod">طريقة الدفع او السداد:</string>
+    <string name="address">عنوان</string>
+    <string name="titlesipadd">عنوان الشحن</string>
+    <string name="shippingarea">منطقة الشحن</string>
+    <string name="selectcity">الرجاء إدخال المدينة إذا كنت تريد البحث عن المنتج</string>
+    <string name="pickupaddress">عنوان البائع</string>
+    <string name="sellercity">مدينة البائع</string>
+    <string name="sellerpostalcode">رمز البائع البريدي</string>
+    <string name="sellerfulladdress">عنوان البائع الكامل</string>
+    <string name="delivertstatus">Dحالة التوصيل :</string>
+    <string name="location">عنوان البائع</string>
+    <string name="shopname">اسم المحل</string>
+    <string name="continue_user">يكمل</string>
+    <string name="loading">جاري التحميل الرجاءالانتظار...</string>
+    <string name="please_select_city">الرجاء تحديد المدينة</string>
+    <string name="changemessage">هل أنت متأكد أنك تريد تغيير المدينة التي ستفرغ بطاقتك إذا قمت بتغيير المدينة</string>
+
+
+</resources>

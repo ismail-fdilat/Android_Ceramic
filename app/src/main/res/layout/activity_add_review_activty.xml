@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/size_7"
+    android:background="@drawable/borderbg"
+    tools:context=".activities.AddReviewActivty">
+
+
+
+        <LinearLayout
+            android:id="@+id/nilu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+           >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_30"
+                android:weightSum="1"
+                android:layout_marginRight="@dimen/size_20">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorappbar"
+                    android:textSize="@dimen/size_20"
+                    android:fontFamily="@font/betm"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="@string/tv_titleaddrv"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/rate_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:cursorVisible="true"
+                android:background="@drawable/borderbg"
+                android:drawablePadding="15sp"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:rating="2.5"
+                android:theme="@style/RatingBar"
+                android:layout_gravity="center"
+
+                />
+
+
+            <EditText
+                android:id="@+id/edt_addrvmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:layout_marginTop="@dimen/size_7"
+                android:background="@drawable/borderbg"
+                android:layout_weight=".5"
+                android:fontFamily="@font/betm"
+                android:textColorHint="@color/darkgrey"
+                android:gravity="start"
+                android:paddingStart="@dimen/size_5"
+                android:paddingTop="@dimen/size_5"
+                android:lines="8"
+                android:inputType="textMultiLine"
+                android:hint="@string/tv_titleaddrv1"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+             />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorappbar"
+                android:layout_marginTop="@dimen/size_40"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_submitrv"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_18"
+                    android:fontFamily="@font/betm"
+                    android:textColor="@color/colorappbar"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/submit"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

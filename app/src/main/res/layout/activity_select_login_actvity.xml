@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SelectLoginActvity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_guests"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="@string/title_Guest" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:background="#111A22">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/size_10"
+                android:src="@drawable/ceramiclogo">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_catrywishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_Guest1"
+            android:layout_marginTop="@dimen/size_26"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:textSize="@dimen/size_16"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/betm"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_loging"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:padding="@dimen/size_14"
+            android:background="@color/colorappbar"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_5"
+            android:text="@string/tv_loginmain"
+            />
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_Guest3"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:fontFamily="@font/betm"
+            />
+
+        <TextView
+            android:id="@+id/tv_guestlogin"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:padding="@dimen/size_14"
+            android:background="@color/colorappbar"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_10"
+            android:text="@string/title_Guest"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>

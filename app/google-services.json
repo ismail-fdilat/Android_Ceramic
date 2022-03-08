@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "854286222033",
+    "project_id": "aslaadceramicapp",
+    "storage_bucket": "aslaadceramicapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854286222033:android:7eed7c7cd04b3146dbbbf0",
+        "android_client_info": {
+          "package_name": "com.shrinkcom.alsaadceramicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854286222033-8832jk0rd15lbb0v3eta4phev66hjq8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shrinkcom.alsaadceramicapp",
+            "certificate_hash": "4e104ab920d734fa59888814f364a82ad180ba85"
+          }
+        },
+        {
+          "client_id": "854286222033-q33341nvbg2hhbvqv0hsh6aksu14g5gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClVVnzwJX5sRcb3YbVRxs7yDaEdQua9OU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854286222033-q33341nvbg2hhbvqv0hsh6aksu14g5gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

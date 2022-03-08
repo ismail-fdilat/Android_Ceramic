@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_margin="@dimen/size_5"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/ll_wish"
+        android:visibility="visible"
+        android:background="@drawable/borderbg"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imv_wishlist"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.7"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:padding="@dimen/size_5"
+          ></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_catrywishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_category"
+                android:layout_marginTop="@dimen/size_5"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/betm"
+                />
+
+            <TextView
+                android:id="@+id/tv_descpwishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                android:lines="1"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_titledescriptio"
+                android:fontFamily="@font/betm"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_sizewishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:text="@string/title_size"
+                android:fontFamily="@font/betm"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:fontFamily="@font/betm"
+                ></TextView>
+
+
+
+
+            <RelativeLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/size_40"
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginBottom="@dimen/size_3"
+                >
+
+
+                <ImageView
+                    android:id="@+id/imgdelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_trash"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_movecart"
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/betm"
+                    android:text="@string/tvmovecart"
+                    android:textSize="@dimen/size_14"
+                    android:padding="@dimen/size_7"
+                    android:background="@color/colorappbar"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/idwishlistmessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_data_found"
+        android:textSize="@dimen/size_16"
+        android:fontFamily="@font/betm"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/size_50"
+        android:layout_centerInParent="true"
+        android:textColor="@color/darkgrey"
+        android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_14"
+        android:text="@string/no_data_found"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:id="@+id/no_data"
+        android:fontFamily="@font/betm"
+        android:layout_centerInParent="true">
+
+    </TextView>
+
+
+<!--
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipeToRefresh"
+        android:layout_below="@+id/slider"
+        android:layout_height="wrap_content">-->
+
+
+
+
+
+    <com.shrinkcom.alsaadceramicapp.activities.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/ll_d1"
+                app:auto_cycle="false"
+                app:pager_animation="Default"
+                app:pager_animation_span="1100" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@drawable/trans_edtbg"
+                android:id="@+id/edi"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinner_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    style="@style/SpinnerTextViewItem"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:popupBackground="#FFF"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="City name"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:drawableRight="@drawable/ccp_down_arrow"
+                    android:id="@+id/id_cityname"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_d1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_below="@+id/edi"
+                >
+
+
+
+
+                <EditText
+                    android:id="@+id/edt_search_home"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:maxLength="25"
+                    android:padding="@dimen/size_7"
+                    android:background="@drawable/trans_edtbg"
+                    android:fontFamily="@font/betm"
+                    android:hint="@string/tv_search"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="@dimen/size_14"
+                    android:textColor="@color/darkgrey"
+                    android:textColorHint="@color/darkgrey"
+                    android:inputType="text"
+                    android:textSize="@dimen/size_14" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:id="@+id/imv_notify"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_notification" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_d2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4.5"
+                android:visibility="gone"
+                android:layout_below="@+id/slider"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/instagram_"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone"
+                    android:layout_weight="1.5"
+                    android:layout_margin="@dimen/size_5"
+                    >
+              <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.2"
+                        android:id="@+id/instagram"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        app:srcCompat="@drawable/ic_instagram"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:fontFamily="@font/betm"
+                        android:gravity="center"
+
+                        android:text="@string/instagram"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/size_12" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_margin="@dimen/size_5"
+                >
+
+
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:id="@+id/ic_genuine"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    app:srcCompat="@drawable/ic_genuine"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/betm"
+                    android:gravity="center"
+
+                    android:text="@string/tv_genuine"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="@dimen/size_12" />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_margin="@dimen/size_5"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:id="@+id/ic_cashon"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_cashon"
+                    />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="@string/tv_cashn"
+                    android:textColor="@color/darkgrey"
+                     android:gravity="center"
+                     android:layout_gravity="center"
+                    android:textSize="@dimen/size_12"
+                    android:fontFamily="@font/betm"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_margin="@dimen/size_5"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:id="@+id/ic_return"
+                    app:srcCompat="@drawable/ic_return"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:fontFamily="@font/betm"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_return"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="@dimen/size_12"
+
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/size_5"
+                android:background="@color/grey"
+                android:layout_below="@+id/ll_d2"
+                />
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v1"
+                android:layout_marginLeft="@dimen/size_3"
+                android:layout_marginRight="@dimen/size_3"
+                android:layout_marginTop="@dimen/size_10"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_categry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="#EEEEEE" />
+
+
+                <ImageView
+                    android:id="@+id/imv_offersdashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_below="@+id/rv_categry"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/size_5"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/lltodays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/imv_offersdashboard"
+                    android:orientation="vertical"
+                    >
+
+                <TextView
+
+                    android:id="@+id/tv_today_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/today_s_deal"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:fontFamily="@font/betm"
+                    android:layout_gravity="center"
+                    />
+
+                    <TextView
+
+                        android:id="@+id/tv_nodate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:layout_below="@+id/tv_today_deals"
+                        android:text="@string/time_s_up"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/size_18"
+                        android:layout_margin="@dimen/size_7"
+                        android:fontFamily="@font/betm"
+                        android:layout_gravity="center"
+                        />
+                <LinearLayout
+                    android:id="@+id/ll_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_today_deals"
+                   android:layout_margin="@dimen/size_10"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/tv_ends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_endsin"
+                        android:textSize="@dimen/size_16"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/size_5"
+                        android:fontFamily="@font/betm"
+                        android:layout_below="@+id/tv_today_deals"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_timerhr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="@dimen/size_16"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/size_5"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:background="@color/darkgrey"
+                        android:fontFamily="@font/betm"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="@dimen/size_16"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/betm"
+                        android:layout_marginLeft="@dimen/size_7"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkgrey"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_timermin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="@dimen/size_16"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/size_5"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:background="@color/darkgrey"
+                        android:fontFamily="@font/betm"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="@dimen/size_16"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/betm"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/size_7"
+                        android:textColor="@color/darkgrey"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_timersec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="@dimen/size_16"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/size_5"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:background="@color/darkgrey"
+                        android:fontFamily="@font/betm"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+
+
+                </LinearLayout>
+
+                    <com.shrinkcom.alsaadceramicapp.activities.MyScrollView
+                        android:id="@+id/hsc2"
+                        android:layout_below="@+id/tv_new_arrivals"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:background="#EEEEEE"
+                        android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_categryoffers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_timer"
+                    android:background="#EEEEEE"
+                    />
+
+                    </com.shrinkcom.alsaadceramicapp.activities.MyScrollView>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_brands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/lltodays"
+                    android:text="@string/tv_titlebrands"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    android:layout_margin="@dimen/size_10"
+                    android:fontFamily="@font/betm"
+                    android:layout_gravity="center"
+                    />
+
+                <com.shrinkcom.alsaadceramicapp.activities.MyScrollView
+                    android:id="@+id/hsc3"
+                    android:layout_below="@+id/tv_brands"
+                    android:layout_width="match_parent"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_brands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                  />
+                </com.shrinkcom.alsaadceramicapp.activities.MyScrollView>
+
+
+                <LinearLayout
+                    android:id="@+id/llnewarival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hsc3"
+                    android:orientation="vertical"
+                    >
+
+                <TextView
+
+                    android:id="@+id/tv_new_arrivals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/new_arrivals"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    android:layout_margin="@dimen/size_10"
+                    android:fontFamily="@font/betm"
+                    android:layout_gravity="center"
+                    />
+
+                <com.shrinkcom.alsaadceramicapp.activities.MyScrollView
+                    android:id="@+id/hsc1"
+                    android:layout_below="@+id/tv_new_arrivals"
+                    android:layout_width="match_parent"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_new_arrivals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#EEEEEE"
+
+                    />
+
+                </com.shrinkcom.alsaadceramicapp.activities.MyScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llrecomend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llnewarival"
+                    android:orientation="vertical"
+                    >
+                <TextView
+
+                    android:id="@+id/tv_recommend_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recommended_products"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    android:layout_margin="@dimen/size_10"
+                    android:fontFamily="@font/betm"
+                    android:layout_gravity="center"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recommend_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:layout_below="@+id/tv_recommend_product"
+                    android:background="#EEEEEE"
+
+                    />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </com.shrinkcom.alsaadceramicapp.activities.MyScrollView>
+
+   <!-- </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+</RelativeLayout>

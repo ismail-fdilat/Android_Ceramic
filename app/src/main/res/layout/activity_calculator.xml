@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    tools:context=".activities.CalculatorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_newcheckout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="Calculator" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#082836"
+            android:textAlignment="textStart"
+            android:text="@string/de"
+            android:gravity="start" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radiogrouptypeid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+
+
+            <RadioButton
+                android:id="@+id/id_rdarea"
+                android:theme="@style/RadioTheme"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:textColor="@color/teal_200"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/you_already_khow"
+                >
+
+
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/id_rdflore"
+                android:theme="@style/RadioTheme"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:textColor="@color/teal_200"
+                android:text="@string/floor_measure"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/id_arealayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="you already known size of the  total space"
+                android:layout_marginTop="10dp" android:background="@color/white"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textcolor"
+                android:text="Enter the total size of the area (in meters) "
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:textSize="14dp"
+                        android:paddingLeft="5dp"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/textcolor"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edt_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Lenth"
+                        android:maxLength="4"
+                        android:textSize="14dp"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/ic_box_edit"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/textcolor"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="in Meters"
+                    android:gravity="center|left"
+                    android:textSize="14dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/textcolor"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/id_layout_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/floor_measuretwo"
+            android:layout_marginTop="10dp" android:background="@color/white"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textcolor"
+            android:text="@string/enter_your_floor_dimen"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/id_recycleview"/>
+
+        <LinearLayout
+            android:id="@+id/id_layout_flore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="100dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Length"
+                        android:textSize="14dp"
+                        android:paddingLeft="5dp"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/textcolor"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edt_width"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Lenth"
+                        android:textSize="14dp"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/ic_box_edit"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/textcolor"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Show"
+                        android:textSize="14dp"
+                        android:paddingLeft="5dp"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/textcolor"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edt_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Lenth"
+                        android:textSize="14dp"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/ic_box_edit"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/textcolor"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginStart="5dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show"
+                    android:textSize="14dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/textcolor"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Lenth"
+                    android:textSize="14dp"
+                    android:paddingHorizontal="5dp"
+                    android:background="@drawable/ic_box_edit"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/textcolor"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginVertical="10dp"
+            android:background="#98A0A4"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/id_addfloor"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/teal_200"
+                android:text="@string/addanotherfloor"
+                android:textSize="16dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed"
+                />
+            <ImageView
+                android:id="@+id/id_add_floorquty"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_baseline_add_circle_24"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:orientation="horizontal">
+
+
+
+
+
+            <Button
+                android:id="@+id/tv_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Calculate"
+                android:background="@color/teal_200"
+                android:textAllCaps="true"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/id_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Reset"
+                android:layout_marginStart="10dp"
+                android:textAllCaps="true"
+                android:backgroundTint="@color/white"
+                android:paddingHorizontal="10dp"
+
+                android:textColor="@color/purple_200"
+                />
+
+            <TextView
+                android:id="@+id/id_nooffloorqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:text="Sum m2 = "
+                android:background="@color/white"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginVertical="10dp"
+            android:background="#98A0A4"
+            />
+
+
+
+        <TextView
+            android:id="@+id/id_deatil"
+            android:textSize="@dimen/size_16"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:text="Ceramic floor tiles 90 cm  \n90cm \nSR / per cartoom 110.0 \nper cartoons cover 1.62 area"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:textSize="@dimen/size_16"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/totalcartoons"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_perr"
+            android:textSize="@dimen/size_16"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/per_cartoon"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:textSize="@dimen/size_16"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/totalprice"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

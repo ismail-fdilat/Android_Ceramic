@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F6F6"
+>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_track"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="Track Order" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_orderid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_track"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@drawable/edt_bg"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/betm"
+        android:gravity="left"
+        android:padding="@dimen/size_14"
+        android:text="Track Order ID : 1DA234567890"
+        android:textColor="@color/darkgrey"
+        android:textSize="@dimen/size_14" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/tv_orderid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/trackerlayout"
+        android:id="@+id/rv_trackorder"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/trackerlayout"
+        android:gravity="bottom"
+        android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_5"
+        android:padding="@dimen/size_5"
+
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+         <ImageView
+             android:id="@+id/imv_1unchecked"
+             android:layout_width="wrap_content"
+             android:visibility="visible"
+             app:srcCompat="@drawable/ic_unchecked"
+             android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imv_1checked"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_checked"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ordered"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/colorappbar"
+                android:fontFamily="@font/betm"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@color/grey"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+        <ImageView
+            android:id="@+id/imv_2uncheck"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/ic_unchecked"
+            android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imv_2checked"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_checked"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipped"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/colorappbar"
+                android:fontFamily="@font/betm"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@color/grey"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/imv_3uncheck"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_unchecked"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imv_3checked"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_checked"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_status3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/colorappbar"
+                android:fontFamily="@font/betm"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

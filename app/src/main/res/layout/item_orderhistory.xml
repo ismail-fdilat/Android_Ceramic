@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_orderh"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll1_order"
+        android:layout_below="@+id/toolbar_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="@dimen/size_5"
+        android:background="@drawable/borderbg"
+        android:orientation="horizontal"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="orderId"
+                android:layout_marginTop="@dimen/size_5"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/betm"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_dateorders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                android:layout_marginTop="5dp"
+                android:text="Date"
+                android:fontFamily="@font/betm"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="5dp"
+                android:text="Date"
+                android:fontFamily="@font/betm"
+                ></TextView>
+
+
+
+
+            <RelativeLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginBottom="@dimen/size_3"
+                android:layout_marginTop="@dimen/size_5">
+
+                <TextView
+                    android:id="@+id/tv_invoice"
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/tv_trackorder"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/betm"
+                    android:text="@string/tv_invoice"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:textSize="@dimen/size_14"
+                    android:padding="@dimen/size_7"
+                    android:background="@color/colorappbar"
+                    android:textColor="@color/white" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_trackorder"
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/betm"
+                    android:text="@string/tv_titlemore"
+                    android:textSize="@dimen/size_14"
+                    android:padding="@dimen/size_7"
+                    android:background="@color/colorappbar"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

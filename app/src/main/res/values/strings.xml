@@ -1,0 +1,335 @@
+<resources>
+    <string name="app_name">Ceramics</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="enter_qauntity"> QTY</string>
+
+
+    <string name="email">Enter your Email</string>
+    <string name="pass">Enter your Password</string>
+    <string name="cpass">Confirm Password</string>
+    <string name="uswrname">Enter your Name</string>
+    <string name="enter_sellername">Seller Name</string>
+    <string name="seller_date">Seller date</string>
+    <string name="enter_day_adddate">Enter Day Add Date</string>
+    <string name="frpass">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="logout">Log Out</string>
+
+    <string name="signup">Signup</string>
+    <string name="mobilenum">Mobile Number</string>
+    <string name="enter_yourcontact">Enter Your Contact Number</string>
+    <string name="enter_bank">Enter Bank Name</string>
+    <string name="enter_account">Enter Account Number</string>
+    <string name="enter_ifsc">Enter IFSC Code</string>
+    <string name="enter_shopname">Enter Shop Name</string>
+    <string name="enter_shipaddress">Enter Ship Address</string>
+    <string name="register">Create Account</string>
+    <string name="register_seller">Create Seller Account</string>
+    <string name="choosefile">Choose file</string>
+    <string name="msg_frpass">We just need your registered Email Id to sent you password reset instruction</string>
+    <string name="title_frpass">FORGOT PASSWORD</string>
+    <string name="next">Next</string>
+    <string name="tv_otp1">CHECK OTP</string>
+    <string name="tv_otp2">Enter OTP sent on your Email</string>
+    <string name="tv_otp3">OTP</string>
+    <string name="submit">Submit</string>
+    <string name="no_order">No Order Found</string>
+
+    <string name="tv_chanpass1">CHANGE PASSWORD</string>
+    <string name="tv_chanpass2">New Password</string>
+    <string name="tv_chanpass3">Confirm Password</string>
+    <string name="tv_already">Already have an Account?</string>
+    <string name="tv_loginmain">Log In</string>
+    <string name="title_edit">Edit</string>
+
+    <string name="tv_search">Search</string>
+    <string name="tv_genuine">Men</string>
+    <string name="instagram">Instagram</string>
+    <string name="tv_cashn">Women</string>
+    <string name="tv_return">Kids</string>
+    <string name="tv_titlebrands">Featured Brands</string>
+
+    <string name="tv_home">Home</string>
+    <string name="tv_category">Category</string>
+    <string name="tv_wishlist">Wishlist</string>
+    <string name="tv_cart">Cart</string>
+    <string name="tv_acc">Account</string>
+    <string name="tv_titlecategry">Category</string>
+    <string name="tv_titlesubcategry">Sub Category</string>
+    <string name="tv_titleproducts">Products</string>
+
+    <string name="tv_titledescriptio"> Product Description</string>
+    <string name="tv_productrating">Product rating</string>
+    <string name="tv_surfaceshape">Surface Shape:</string>
+    <string name="type_of_cuttingthickness">Type of cutting thickness:</string>
+    <string name="country_of_manufacture">Country of manufacture:</string>
+    <string name="thicknessm">Thickness(mm):</string>
+    <string name="thecolor">The color:</string>
+    <string name="thecity">City:</string>
+    <string name="thesize">The size:</string>
+
+
+    <string name="tv_titlereview">Review</string>
+    <string name="tvnodata">No Data Found</string>
+    <string name="tvinstock">4 Items In Stock</string>
+    <string name="tvaddcart">ADD TO CART</string>
+    <string name="tvmovecart">Move to cart</string>
+    <string name="tvwishlist">Wishlist</string>
+
+    <string name="tv_titlePrice">Price</string>
+    <string name="tv_titlesizw">Size</string>
+    <string name="tv_titlebrand">Brand</string>
+    <string name="tv_titledetail">View Detail</string>
+    <string name="title_AllAdress">Address Book</string>
+    <string name="title_done">Done</string>
+
+
+    <string name="tv_facebook" translatable="false">Facebook</string>
+    <string name="tv_google">Google</string>
+
+    <string name="tv_mypf">My Profile</string>
+    <string name="tv_lan">Language</string>
+    <string name="tv_myacc">My Account</string>
+    <string name="tv_myorder">My Orders</string>
+    <string name="tv_addbook">Address Book</string>
+    <string name="tv_tkorder">Track Order</string>
+    <string name="tv_call">Call Us</string>
+    <string name="tv_contact">Contact Us</string>
+    <string name="tv_changepassword">Change Password</string>
+    <string name="tv_rate">Rate Our App</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Category</string>
+    <string name="title_wishlist">wishlist</string>
+    <string name="title_brand">Brand</string>
+    <string name="addanotherfloor">Add another floor</string>
+    <string name="Calculate">Calculate</string>
+    <string name="Reset">Reset</string>
+    <string name="totalcartoons">Total Square Meter</string>
+    <string name="totalprice">Total Price</string>
+    <string name="cera">Ceramic floor tiles</string>
+    <string name="per_cartoon"> per sq.m</string>
+    <string name="percover"> per cartoons cover</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_Account">Account</string>
+    <string name="title_comments">Comments</string>
+    <string name="title_confirm">Confirm Payment</string>
+    <string name="title_send">Send</string>
+    <string name="title_size">Size</string>
+    <string name="title_select">Select</string>
+    <string name="title_addadress">Add Address</string>
+    <string name="title_track">Track Order</string>
+
+
+    <string name="title_item">Subtotal</string>
+    <string name="itemscount">Item</string>
+    <string name="title_bagtitle">Bag Total</string>
+    <string name="title_bagamount">SAR 250</string>
+
+    <string name="title_qty">Qty</string>
+    <string name="title_price">SAR</string>
+
+
+    <string name="tv_remove">Remove</string>
+    <string name="tv_movetowishlist">Move to Wishlist</string>
+    <string name="tv_addmoretowishlist">Add More from Wishlist</string>
+    <string name="tv_pricedetails">Price Details</string>
+    <string name="title_subtotl">Subtotal</string>
+    <string name="tv_checkout">Checkout</string>
+
+
+    <string name="title_forgotpass">FORGOT PASSWORD</string>
+    <string name="title_forgotpass1">We just need your registered Email Id to sent you password reset instruction</string>
+
+
+    <string name="title_otp1">CHECK OTP</string>
+    <string name="title_otp2">Enter OTP sent on your Email</string>
+    <string name="title_otp3">Enter OTP</string>
+
+    <string name="title_Changpas1">CHANGE PASSWORD</string>
+    <string name="title_Changpas2">Enter Password</string>
+    <string name="title_oldpassword">Old Password</string>
+    <string name="title_Changpas3">Confirm Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_fullname">Fullname</string>
+    <string name="title_email">Email</string>
+    <string name="title_mobile">Mobile Number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_editpf">Edit Profile</string>
+    <string name="title_update">Update</string>
+
+
+    <string name="otp_successfully_verify">OTP Successfully Verify</string>
+    <string name="enternewpassword">Enter New Password</string>
+    <string name="enteroldpassword">Enter Old Password</string>
+    <string name="password_success_update">Password Successfully Reset</string>
+    <string name="enter_your_confirm_password">Enter your Confirmation password</string>
+    <string name="password_not_match">Password do not match</string>
+    <string name="oldreq">Old password required</string>
+
+
+    <string name="facebook_app_id">241383984500065</string>
+    <string name="fb_login_protocol_scheme">fb241383984500065</string>
+
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+    <string name="no_data_found">No data Found</string>
+    <string name="items">Item</string>
+    <string name="no_product_added_to_cart">No Product Added To Cart</string>
+
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_libary">Choose Gallery Image</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photo">Add Photoo</string>
+    <string name="enter_valid_email">Please Enter Valid Email</string>
+
+
+    <string name="tv_language1">Arabic</string>
+    <string name="tv_language2">English</string>
+    <string name="back">Back</string>
+    <string name="select_language">Select Language</string>
+    <string name="title_shippingadd">SHIPPING ADDRESS</string>
+    <string name="title_ordersum">View Order Details</string>
+    <string name="title_total">Total</string>
+    <string name="title_proceedtopay">Proceed to Pay</string>
+    <string name="title_Address">Shipping Address</string>
+    <string name="title_shippingcity">Shipping City</string>
+    <string name="title_area">Shipping Area</string>
+    <string name="title_city">City</string>
+    <string name="title_zipcode">Zipcode</string>
+    <string name="title_country">Country</string>
+    <string name="titlename">Name</string>
+
+    <string name="delivery">Delivery</string>
+    <string name="order_detail">Order Total</string>
+    <string name="title_getintouch">GET IN TOUCH</string>
+
+    <string name="Web_Client_Id">854286222033-8832jk0rd15lbb0v3eta4phev66hjq8i.apps.googleusercontent.com</string>
+
+    <string name="tv_titlemore">View More..</string>
+    <string name="tv_invoice">Invoice</string>
+    <string name="tv_titleaddrv">Add a Review</string>
+    <string name="tv_titlerate">How do you rate \nour App ?</string>
+    <string name="tv_titleaddrv1">Write your comments here....</string>
+
+
+    <string name="applink">Call us at <a href="+91 1234567890">+91 1234567890</a></string>
+    <string name="permite_permisssion" translatable="false">Please grant required permissions.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="apply">Apply</string>
+    <string name="today_s_deal">Today\'s Deal</string>
+    <string name="recommended_products" translatable="false">Recommended Products</string>
+    <string name="new_arrivals" translatable="false">Recently Arrived</string>
+    <string name="change_or_add_address" translatable="false">Change or Edit Address</string>
+    <string name="tv_deliveryes">Delivery Estimates</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_notification">Notifications</string>
+    <string name="title_continue" translatable="false">Continue Shopping</string>
+    <string name="title_checkout" translatable="false">Checkout</string>
+    <string name="title_Guest" translatable="false">Continue as a Guest</string>
+    <string name="title_Guest1">Hello Guest!</string>
+    <string name="title_Guest2" translatable="false">Guest Shipping</string>
+    <string name="title_Guest3">OR</string>
+    <string name="title_endsin">Ends In</string>
+
+
+    <!-- TODO: validation -->
+    <string name="title_Emailisrequired">Email is required</string>
+    <string name="title_passwordisrequired">Password is required</string>
+    <string name="title_userisrequired">Username is required</string>
+    <string name="title_cpassisrequired">Please Enter confirm password!</string>
+    <string name="title_mobileisrequired">Mobile Number is required</string>
+    <string name="title_correct">Please Enter correct password</string>
+    <string name="title_adressisrequired">Address is required</string>
+    <string name="title_shippingcityr">Shipping City is required</string>
+    <string name="titile_shippingarea">Shipping Area is required</string>
+    <string name="deliveryby">Delivery by</string>
+
+    <string name="title_cityisrequired">Please confirm city!</string>
+    <string name="title_zipcodeisrequired">Please confirm zipcode!</string>
+    <string name="title_enterotp">Enter OTP</string>
+    <string name="title_whatsapp">Whatsapp</string>
+    <string name="title_otpst">OTP has been sent to your Registered email address</string>
+    <string name="title_otpst1">This email id is not Registered please enter another email address</string>
+    <string name="title_otpst2">OK</string>
+    <string name="title_confirmn">Confirm</string>
+    <string name="title_add">Add</string>
+    <string name="tv_cartdialog1">Are you sure want to remove this product</string>
+    <string name="order_successful">Order Successful !!</string>
+    <string name="tv_confirm1">Your Order has been placed   Successfully</string>
+    <string name="add_review">Add Review</string>
+    <string name="next_payment_info">Next-Payment Info</string>
+    <string name="tv_rateapp">Tap the number of stars to rate our app</string>
+    <string name="close">Close</string>
+    <string name="tv_internet">Please Check Your Internet Connection</string>
+    <string name="tv_whatsappnum">Whatsapp Number</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="online">Online Payment</string>
+    <string name="place_order">Place Order</string>
+    <string name="flat_shipping_rate">Flat Shipping Rate</string>
+    <string name="uae_vat">UAE_VAT</string>
+    <string name="product_name">Product Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
+    <string name="tv_exit">Confirm exit?</string>
+    <string name="tv_yes">Yes</string>
+    <string name="tv_no">No</string>
+    <string name="subzero">Subtotal(0)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Productavailablesoon">Will available soon</string>
+    <string name="calculator">Calculator</string>
+    <string name="de">Ceramic Calculator \nClick to calculate \nthe amount of ceramic by area</string>
+    <string name="OutOfStock">Out Of Stock</string>
+    <string name="InStock">In Stock</string>
+    <string name="deliverttime">Delivery will be within 2 - 4 working days</string>
+    <string name="time_s_up">TIME\'S UP!!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="productalready">Product already added</string>
+    <string name="productadded">Product added</string>
+    <string name="additem">Add item in cart</string>
+    <string name="oneqty">One Quantity is required</string>
+    <string name="reqqqq">Requested item is not available in stock</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unavailablestck">Item Unavailable in stock</string>
+    <string name="areyusure">Are you sure want to move to wishlist</string>
+    <string name="firstlogin">Please login first to add Products to wishlist</string>
+    <string name="removedwish">Removed from wishlist</string>
+    <string name="chckout">CHECKOUT</string>
+    <string name="seller">Seller</string>
+    <string name="orderid">Order ID :</string>
+
+
+    <string name="you_already_khow">You already know the \n size of thetotal space</string>
+    <string name="floor_measure">Floor \nMeasurements</string>
+    <string name="floor_measuretwo">Floor Measurements</string>
+    <string name="enter_your_floor_dimen">Enter your floor dimensions (in meters)</string>
+    <string name="no_inernet">No Internet Connection</string>
+    <string name="tax">Tax</string>
+    <string name="paymentmethod">Payment Method  :</string>
+    <string name="address">Shipping Address</string>
+    <string name="titlesipadd">Shipping Address</string>
+    <string name="shippingarea">Shipping Area</string>
+    <string name="selectcity">Please enter city if you want to search product</string>
+    <string name="pickupaddress">Seller Address</string>
+    <string name="sellercity">Seller City</string>
+    <string name="sellerpostalcode">Seller Postal Code</string>
+    <string name="sellerfulladdress">Seller Full Address</string>
+    <string name="delivertstatus">Delivery Status   :</string>
+    <string name="location">Seller Address</string>
+    <string name="shopname">Shop Name</string>
+    <string name="continue_user">Continue</string>
+    <string name="loading">Loading please wait</string>
+    <string name="please_select_city">Please Select City</string>
+    <string name="changemessage">Are you sure you want to change city your card will empty if you change city</string>
+
+</resources>

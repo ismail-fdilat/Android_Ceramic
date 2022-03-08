@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EditCheckoutActvty">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_editcheckout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="Check out" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#E6E2E2"
+                android:padding="@dimen/size_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_shippingadd"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/betm"
+                    android:textColor="@color/colorappbar"
+                    android:textSize="@dimen/size_18"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/et_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_bg"
+                    android:drawableRight="@drawable/ic_userrg"
+                    android:ems="15"
+                    android:fontFamily="@font/betm"
+                    android:hint="@string/titlename"
+                    android:inputType="text"
+                    android:backgroundTint="@color/white"
+                    android:padding="@dimen/size_14"
+                    android:gravity="left"
+                    android:drawablePadding="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:textColor="@color/darkgrey"
+                    android:textColorHint="@color/lgrey"
+                    android:textSize="@dimen/size_14" />
+
+
+                <EditText
+                    android:id="@+id/edt_mobileno_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_bg"
+                    android:drawableRight="@drawable/ic_phone"
+                    android:ems="15"
+                    android:fontFamily="@font/betm"
+                    android:hint="@string/mobilenum"
+                    android:inputType="number"
+                    android:backgroundTint="@color/white"
+                    android:padding="@dimen/size_14"
+                    android:gravity="left"
+                    android:drawablePadding="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:textColor="@color/darkgrey"
+                    android:textColorHint="@color/lgrey"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/edt_whatsappno_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:background="@drawable/edt_bg"
+                    android:backgroundTint="@color/white"
+                    android:drawableRight="@drawable/ic_whatsapp"
+                    android:drawableTint="@color/lgrey"
+                    android:drawablePadding="@dimen/size_10"
+                    android:ems="15"
+                    android:fontFamily="@font/betm"
+                    android:gravity="left"
+                    android:hint="@string/tv_whatsappnum"
+                    android:inputType="number"
+                    android:padding="@dimen/size_14"
+                    android:textColor="@color/darkgrey"
+                    android:textColorHint="@color/lgrey"
+                    android:textSize="@dimen/size_14" />
+
+
+                <EditText
+                    android:id="@+id/edt_email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_bg"
+                    android:drawableRight="@drawable/ic_email"
+                    android:ems="15"
+                    android:fontFamily="@font/betm"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="@color/white"
+                    android:padding="@dimen/size_14"
+                    android:gravity="left"
+                    android:drawablePadding="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:textColor="@color/darkgrey"
+                    android:textColorHint="@color/lgrey"
+                    android:textSize="@dimen/size_14" />
+
+
+
+                <EditText
+                    android:id="@+id/et_address_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_bg"
+                    android:drawableRight="@drawable/ic_address_ship"
+                    android:ems="15"
+                    android:fontFamily="@font/betm"
+                    android:hint="@string/title_Address"
+                    android:inputType="text"
+                    android:backgroundTint="@color/white"
+                    android:padding="@dimen/size_14"
+                    android:gravity="left"
+                    android:drawablePadding="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:textColor="@color/darkgrey"
+                    android:textColorHint="@color/lgrey"
+                    android:textSize="@dimen/size_14" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_44"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:layout_marginBottom="@dimen/size_20"
+                    android:background="@drawable/edt_bg"
+                    android:orientation="horizontal"
+
+
+                    >
+
+
+                    <Spinner
+                        android:id="@+id/et_city_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:dropDownWidth="350dp"
+                        android:dropDownVerticalOffset="@dimen/size_10"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/size_10"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/done_editadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorappbar"
+                    android:text="@string/title_done"
+                    android:fontFamily="@font/betm"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

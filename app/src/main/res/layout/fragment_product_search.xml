@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.ProductSearchFragment">
+
+
+    <EditText
+        android:id="@+id/edt_search_home"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:maxLength="25"
+        android:visibility="gone"
+        android:padding="@dimen/size_7"
+        android:background="@drawable/trans_edtbg"
+        android:fontFamily="@font/betm"
+        android:hint="@string/tv_search"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/size_14"
+        android:textColor="@color/darkgrey"
+        android:textColorHint="@color/darkgrey"
+        android:inputType="text"
+        android:textSize="@dimen/size_14" />
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_psearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="@string/tv_titleproducts" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"
+                android:layout_alignParentEnd="true"
+                android:tint="@color/white"
+                android:id="@+id/iv_search"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/nodata_psearch"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/size_18"
+            android:layout_width="match_parent"
+            android:text="@string/no_data_found"
+            android:fontFamily="@font/betm"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_productsearched"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F2F2"
+        android:layout_marginTop="0dp" />
+
+</LinearLayout>

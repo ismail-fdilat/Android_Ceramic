@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MyProfileFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mypf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="@string/tv_mypf" />
+
+            <ImageView
+                android:id="@+id/edit_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                app:srcCompat="@drawable/ic_edit"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_mypf"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#419C1313"
+        android:backgroundTintMode="src_over"
+        android:background="@drawable/pfbanner"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:background="@drawable/ic_userpf"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/iv_image"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/title_fname"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/darkgrey"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_30"
+            android:text="@string/title_fullname"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_fulname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:drawableRight="@drawable/ic_userrg"
+            android:ems="15"
+            android:fontFamily="@font/betm"
+            android:hint="@string/title_fullname"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/size_14"
+            android:gravity="left"
+            android:drawablePadding="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_7"
+            android:textColor="@color/darkgrey"
+            android:textColorHint="@color/lgrey"
+            android:textSize="@dimen/size_14" />
+
+
+        <TextView
+            android:id="@+id/title_email"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/darkgrey"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/title_email"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:drawableRight="@drawable/ic_email"
+            android:ems="15"
+            android:fontFamily="@font/betm"
+            android:hint="@string/title_email"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/size_14"
+            android:gravity="left"
+            android:drawablePadding="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_7"
+            android:textColor="@color/darkgrey"
+            android:textColorHint="@color/lgrey"
+            android:textSize="@dimen/size_14" />
+
+
+
+
+        <TextView
+            android:id="@+id/title_mobile"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/darkgrey"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/title_mobile"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:drawableRight="@drawable/ic_phone"
+            android:ems="15"
+            android:maxLength="15"
+            android:fontFamily="@font/betm"
+            android:hint="@string/title_mobile"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/size_14"
+            android:gravity="left"
+            android:drawablePadding="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_7"
+            android:layout_marginBottom="@dimen/size_14"
+            android:textColor="@color/darkgrey"
+            android:textColorHint="@color/lgrey"
+            android:textSize="@dimen/size_14" />
+
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:padding="@dimen/size_14"
+            android:background="@color/colorappbar"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_10"
+            android:text="@string/logout"
+
+            />
+
+
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>

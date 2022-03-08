@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_cat"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/size_5"
+            android:id="@+id/ll_main1"
+            android:weightSum="3"
+            >
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:padding="5dp"
+                android:background="@drawable/shadow_bg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/icon"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+            <TextView
+                android:id="@+id/icon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.9"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center"
+                android:textSize="@dimen/size_16"
+                android:layout_marginLeft="@dimen/size_5"
+                android:fontFamily="@font/betm"
+                android:textColor="@color/darkgrey"
+                android:text="Comforter Set" />
+
+
+
+
+
+            <ImageView
+                android:layout_weight="0.1"
+                android:id="@+id/imv_forwardcat"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_farrows" />
+
+
+
+        </LinearLayout>
+
+
+  <View
+      android:layout_below="@+id/ll_main1"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="@dimen/size_5"
+      android:background="@color/grey"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

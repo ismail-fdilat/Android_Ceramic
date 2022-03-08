@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".activities.OrderSummary">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ordersummary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="Order Summary" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar_ordersummary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="@dimen/size_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idsname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/betm"
+                        android:gravity="left|center"
+                        android:text="Name"
+                        android:textColor="#292828"
+                        android:textSize="@dimen/size_16"
+                        android:textStyle="bold" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/idsemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:fontFamily="@font/betm"
+                        android:text="rinku1990kishori@gmail.com"
+                        android:textSize="@dimen/size_16" />
+
+                    <TextView
+                        android:id="@+id/idsphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/size_16"
+                        android:fontFamily="@font/betm"
+                        android:gravity="left|center"
+                        android:text="9754888977" />
+
+                    <TextView
+                        android:id="@+id/idsdeliveryaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/betm"
+                        android:gravity="left|center"
+                        android:text="your Shipping address is vijaynagar indore madhaya pradesh India"
+                        android:textSize="@dimen/size_18"
+                        />
+
+                    <TextView
+                        android:id="@+id/idsdeliverycity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/betm"
+                        android:gravity="left|center"
+                        android:text="indore"
+                        android:textSize="@dimen/size_18"
+                       />
+
+                    <Button
+                        android:layout_marginTop="@dimen/size_5"
+                        android:id="@+id/btn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:background="@drawable/new_bg_category"
+                        android:text="@string/change_or_add_address"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/betm"
+                        android:textColor="@color/colorappbar"
+                        android:textSize="@dimen/size_14"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/size_10"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left|center"
+                android:text="@string/tv_deliveryes"
+                android:textColor="@color/black"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_18"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/idparentcardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="@dimen/size_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left|center"
+                            android:text="@string/items"
+                            android:fontFamily="@font/betm"
+                            android:textSize="@dimen/size_16" />
+
+                        <TextView
+                            android:id="@+id/sitemtotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:gravity="right|center"
+                            android:text="0.0"
+                            android:fontFamily="@font/betm"
+                            android:textSize="@dimen/size_16"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left|center"
+                            android:text="@string/delivery"
+                            android:fontFamily="@font/betm"
+                            android:textSize="@dimen/size_16" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:gravity="right|center"
+                            android:text="0.0"
+                            android:fontFamily="@font/betm"
+                            android:textSize="@dimen/size_16" />
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_final_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left|center"
+                            android:text="Final Total"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/betm"
+                            android:textSize="@dimen/size_16" />
+
+                        <TextView
+                            android:id="@+id/idsfinaltotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:gravity="right|center"
+                            android:text="0.0"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/betm"
+                            android:textSize="@dimen/size_16" />
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left|center"
+                android:text="Pay With "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:gravity="left|center"
+                android:text="@string/items"
+                android:textColor="@color/black"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_18"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idrecycleviewproductsummery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_7"
+              ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/nextpay_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/next_payment_info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProductFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_products"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="@string/tv_titleproducts" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="@dimen/size_5"
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar_products"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_3"
+            android:layout_weight="0.5"
+            android:gravity="center"
+
+            android:background="#EEEEEE"
+            android:orientation="horizontal"
+
+
+            >
+
+
+            <Spinner
+                android:id="@+id/spn_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:dropDownWidth="350dp"
+                android:dropDownVerticalOffset="@dimen/size_10"
+                android:fontFamily="@font/betm"
+                android:gravity="center"
+                android:dropDownHeight="100dp"
+                android:verticalScrollbarPosition="right"
+                android:overlapAnchor="false"
+                android:scrollbars="vertical"
+                android:spinnerMode="dropdown"
+                android:popupElevation="3dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:background="#EEEEEE"
+            android:layout_margin="@dimen/size_3"
+            android:visibility="gone"
+
+            >
+
+
+            <Spinner
+                android:id="@+id/spn_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/tv_titlesizw"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/size_12"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="350dp"
+                android:verticalScrollbarPosition="left"
+                android:dropDownVerticalOffset="10.5dp"
+                android:overlapAnchor="false"
+                android:fontFamily="@font/betm"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="#EEEEEE"
+            android:layout_margin="@dimen/size_3"
+            >
+
+            <Spinner
+                android:id="@+id/spn_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/tv_titlebrand"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="350dp"
+                android:dropDownHorizontalOffset="100dp"
+                android:dropDownVerticalOffset="10.5dp"
+                android:textColor="@color/black"
+                android:verticalScrollbarPosition="left"
+                android:scrollbarThumbVertical="@drawable/scrollbar_style"
+                android:textSize="@dimen/size_12"
+                android:overlapAnchor="false"
+                android:fontFamily="@font/betm"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/ll_sub"
+        android:id="@+id/rv_subsubcategry"
+        android:background="#F6F6F6"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size_3"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/nodata_products"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/size_18"
+            android:layout_width="match_parent"
+            android:text="@string/no_data_found"
+            android:fontFamily="@font/betm"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

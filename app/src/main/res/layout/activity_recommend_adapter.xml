@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    tools:context=".adaptor.RecommendAdapter"
+    android:layout_marginLeft="@dimen/size_3"
+    android:layout_marginTop="@dimen/size_3"
+    android:layout_marginBottom="@dimen/size_5"
+    android:layout_marginRight="@dimen/size_3"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/img_recommend"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackground" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_recomndname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/betm"
+            android:text="@string/tv_titlesubcategry"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/black" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_5"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginTop="@dimen/size_3"
+            android:id="@+id/tv_recofferedprice"
+            android:layout_width="0dp"
+            android:gravity="start"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/betm"
+            android:text="SAR 500"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/colorappbar"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/size_3"
+            android:id="@+id/tv_pricerecomnd"
+            android:layout_width="0dp"
+            android:gravity="start|bottom"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/betm"
+            android:text="SAR 500"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginBottom="@dimen/size_3"
+      >
+
+
+        <RatingBar
+            android:id="@+id/ratingBar_recomd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_alignParentLeft="true"
+            android:rating="3.5"
+            android:theme="@style/RatingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/imv_unfav_recomd"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:gravity="right|center"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_wishlistheeart" />
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/imv_fav_recomd"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:gravity="right|center"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_wishlistfill"   />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

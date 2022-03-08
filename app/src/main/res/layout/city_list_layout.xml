@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   >
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="@dimen/size_10"
+       android:layout_marginLeft="@dimen/size_10"
+       android:layout_marginRight="@dimen/size_10"
+       android:layout_marginTop="4dp"
+       android:visibility="visible"
+       android:elevation="@dimen/size_10">
+
+       <LinearLayout
+           android:id="@+id/id_parent_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="City Name"
+               android:textSize="18dp"
+               android:textColor="@color/black"
+               android:id="@+id/id_cityid"
+               android:padding="10dp"/>
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/red"/>
+</LinearLayout>

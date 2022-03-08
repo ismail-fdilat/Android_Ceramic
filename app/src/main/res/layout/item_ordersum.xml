@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size_5"
+        android:background="@drawable/borderbg"
+        android:layout_marginRight="@dimen/size_5"
+        >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_7"
+                android:orientation="horizontal"
+                >
+
+
+
+
+                <TextView
+                    android:id="@+id/tvnm_catry_orders"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.33"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_category"
+                    android:textSize="@dimen/size_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorappbar"
+                    android:fontFamily="@font/betm" />
+
+                <TextView
+                    android:id="@+id/tv_quantity_order"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="@dimen/size_14"
+                    android:text="@string/title_size"
+                    android:fontFamily="@font/betm" />
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_price_orders"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.33"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_18"
+                        android:fontFamily="@font/betm"
+                        android:textColor="@color/darkgrey"
+                        android:text="@string/title_price" />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CartFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+            android:text="@string/title_cart" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/ll_buttons"
+        android:layout_below="@+id/toolbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+       >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+
+            android:id="@+id/ll_totalcart"
+            android:layout_above="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@drawable/borderbg"
+            android:padding="@dimen/size_3"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginBottom="@dimen/size_3"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_titlesub"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:padding="@dimen/size_3"
+                android:drawablePadding="@dimen/size_10"
+                android:layout_height="wrap_content"
+                android:text="@string/title_subtotl"
+                android:textSize="@dimen/size_14"
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/betm"
+                />
+
+            <TextView
+                android:id="@+id/tv_subtotAL"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:padding="@dimen/size_3"
+                android:drawablePadding="@dimen/size_10"
+                android:layout_height="wrap_content"
+                android:text="250"
+                android:gravity="left"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/colorappbar"
+                android:textStyle="bold"
+                android:fontFamily="@font/betm"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cart"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size_3"
+            android:layout_height="match_parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/idcartmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_product_added_to_cart"
+            android:textSize="@dimen/size_16"
+            android:fontFamily="@font/betm"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="@dimen/size_3"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginBottom="@dimen/size_10"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:background="@drawable/borderbg"
+            android:id="@+id/tv_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:textSize="@dimen/size_18"
+            android:layout_margin="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:padding="@dimen/size_3"
+            android:drawablePadding="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:textColor="@color/darkgrey"
+            android:text="@string/itemscount" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_continueshopp"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:padding="@dimen/size_14"
+            android:background="@color/colorappbar"
+            android:layout_height="wrap_content"
+            android:text="@string/title_continue"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_checkout"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/size_14"
+            android:background="@color/colorappbar"
+            android:layout_height="wrap_content"
+
+            android:text="@string/tv_checkout"
+
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

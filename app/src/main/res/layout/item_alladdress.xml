@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/size_5"
+        app:cardElevation="@dimen/size_10">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="left|center"
+                android:fontFamily="@font/betm"
+                android:text="Deliver to"
+                android:textSize="@dimen/size_16"
+                android:textColor="#292828"
+                />
+
+
+            <TextView
+                android:id="@+id/idsname_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="left|center"
+                android:fontFamily="@font/betm"
+                android:text="rinku1990kishori@gmail.com"
+                android:textSize="@dimen/size_16"
+                android:textColor="#292828"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:id="@+id/idsphone_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:textColor="#292828"
+                android:gravity="left|center"
+                android:text="9754888977"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/deliveryaddress_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/betm"
+                android:gravity="left|center"
+                android:text="your Shipping address is vijaynagar indore madhaya pradesh India"
+                android:textSize="@dimen/size_16"
+               />
+
+
+            <TextView
+                android:id="@+id/idsdeliverycity_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/betm"
+                android:gravity="left|center"
+                android:text="indore"
+                android:textSize="@dimen/size_16"
+                />
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginBottom="@dimen/size_5"
+            android:padding="@dimen/size_5"
+            android:background="@drawable/borderbg"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+
+            >
+
+
+            <TextView
+                android:id="@+id/tv_remove_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/tv_remove"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_remove"
+                android:drawableStart="@drawable/ic_remove"
+                android:drawablePadding="@dimen/size_7"
+                />
+
+            <TextView
+                android:id="@+id/tv_edit_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/title_edit"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:drawablePadding="@dimen/size_7"
+                android:drawableTint="@color/colorappbar"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawableStart="@drawable/ic_edit"
+
+
+                />
+
+<!--
+            <RadioGroup
+                android:id="@+id/rg_selectadd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+-->
+
+            <CheckBox
+                android:id="@+id/cb_selectadd"
+                android:layout_width="0dp"
+                android:fontFamily="@font/betm"
+                android:layout_gravity="center"
+                android:layout_weight="0.33"
+                android:gravity="center_vertical"
+
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/size_16"
+                android:layout_height="wrap_content"
+                android:text="@string/title_select" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

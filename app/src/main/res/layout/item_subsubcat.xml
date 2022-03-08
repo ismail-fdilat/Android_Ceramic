@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/size_3"
+    android:layout_marginTop="@dimen/size_3"
+    android:layout_marginBottom="@dimen/size_5"
+    android:layout_marginRight="@dimen/size_3"
+    android:id="@+id/ll_subsubcat"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+                <ImageView
+                    android:id="@+id/imv_subsubcat"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"/>
+
+
+
+                <TextView
+                    android:id="@+id/tv_subcatnamne"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/betm"
+                    android:text="@string/tv_titlesubcategry"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_5"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_marginTop="@dimen/size_3"
+                android:id="@+id/tv_subofferedprice"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/betm"
+                android:text="SAR 500"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/colorappbar"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/size_3"
+                android:id="@+id/tv_subcatprice"
+                android:layout_width="0dp"
+                android:gravity="start|bottom"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/betm"
+                android:text="SAR 500"
+                android:layout_weight="0.6"
+                android:textSize="@dimen/size_12"
+                android:textColor="@color/darkgrey"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginBottom="@dimen/size_5"
+         >
+
+
+
+                <RatingBar
+                    android:id="@+id/ratingBar_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:layout_gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:theme="@style/RatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_gravity="right">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/imv_unfavproduct"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:padding="2dp"
+                android:visibility="visible"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_wishlistheeart" />
+
+
+            <ImageView
+                android:id="@+id/imv_favproduct"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:gravity="right|center"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_wishlistfill"  />
+
+
+</RelativeLayout>
+        </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

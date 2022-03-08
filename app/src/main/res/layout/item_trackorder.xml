@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="@dimen/size_5"
+    android:id="@+id/idmainlayout"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="@dimen/size_5"
+        android:orientation="horizontal"
+        android:background="@drawable/edt_bg"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_order"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_gravity="center"
+           />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="5dp"
+            android:layout_marginLeft="@dimen/size_10"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_productnameorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_category"
+                android:layout_marginTop="@dimen/size_5"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/betm"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_descriptionorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                android:lines="1"
+                android:layout_marginTop="5dp"
+                android:text="Description"
+                android:fontFamily="@font/betm"
+                />
+
+            <TextView
+                android:id="@+id/tv_priceorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="5dp"
+                android:text="@string/title_price"
+                android:fontFamily="@font/betm"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_5">
+
+                <TextView
+                    android:id="@+id/tv_qtyorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/title_qty"
+                    android:fontFamily="@font/betm"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_viewfull"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorappbar"
+                    android:fontFamily="@font/betm"
+                    android:gravity="center"
+                    android:padding="@dimen/size_7"
+                    android:text="@string/tv_titlemore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14"
+                    android:visibility="visible" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/size_5"
+
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginBottom="@dimen/size_3"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_titlerevproduct"
+                    android:layout_width="110dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/betm"
+                    android:text="@string/add_review"
+                    android:textSize="@dimen/size_14"
+                    android:padding="@dimen/size_7"
+                    android:background="@color/colorappbar"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

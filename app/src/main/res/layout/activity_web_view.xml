@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WebViewActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/icon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:background="@color/colorappbar"
+                android:textColor="@color/white"
+                android:text="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/icon_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/downloadarrow"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:background="@color/colorappbar"
+                android:textColor="@color/white"
+                android:text="@string/app_name" />
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview">
+
+    </WebView>
+
+
+</LinearLayout>

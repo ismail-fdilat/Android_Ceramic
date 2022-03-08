@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CategoryFragment">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_categry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        android:background="@color/white"
+        >
+
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:maxLength="25"
+                android:padding="@dimen/size_7"
+                android:background="@drawable/trans_roundbg"
+                android:fontFamily="@font/betm"
+                android:hint="@string/tv_search"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawableRight="@drawable/ic_rarrow"
+                android:drawablePadding="@dimen/size_14"
+                android:textColor="@color/darkgrey"
+                android:textColorHint="@color/darkgrey"
+                android:inputType="textCapWords"
+                android:textSize="@dimen/size_14" />
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/nodata_cat"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/size_18"
+            android:layout_width="match_parent"
+            android:text="@string/no_data_found"
+            android:fontFamily="@font/betm"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categrymain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F2F2"
+        android:scrollbars = "vertical"
+        android:layout_below="@+id/toolbar_categry"
+        android:layout_marginTop="0dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/size_5"
+    android:layout_marginLeft="@dimen/size_5"
+    android:layout_marginTop="@dimen/size_5"
+    android:layout_marginBottom="@dimen/size_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbg"
+
+            >
+
+
+            <TextView
+                android:id="@+id/tv_usernamerv"
+                android:layout_toRightOf="@id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_16"
+                android:fontFamily="@font/betm"
+                android:text="ABCD"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_userrv"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/user"
+                android:layout_height="wrap_content"
+                android:text="44-46 Morningside Road Edinburgh Scotland"
+                android:layout_margin="@dimen/size_5"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/darkgrey"
+                android:layout_below="@id/tv_usernamerv" />
+
+
+            <RatingBar
+                android:id="@+id/ratingrv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                android:progressTint="@color/yellow"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_margin="5dp"
+                android:layout_below="@id/tv_userrv"
+                android:layout_toRightOf="@id/user"
+                />
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="6dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_userpf"
+                />
+
+            <TextView
+                android:id="@+id/tv_daterv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_14"
+                android:fontFamily="@font/betm"
+                android:text="18-9-2019"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_5"
+                android:textColor="@color/colorPrimary"
+                android:layout_above="@id/tv_userrv"
+                android:layout_alignParentRight="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

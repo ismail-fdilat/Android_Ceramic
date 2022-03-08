@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/size_3"
+    android:layout_marginTop="@dimen/size_14"
+    android:layout_marginBottom="@dimen/size_14"
+    android:layout_marginRight="@dimen/size_3"
+
+    >
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imv_offers"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="@dimen/size_5"
+            android:id="@+id/tv_price_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66.33 SAR"
+            android:textSize="@dimen/size_16"
+            android:gravity="center"
+            android:fontFamily="@font/betm"
+            android:layout_gravity="center"
+            android:textColor="@color/colorappbar"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/size_5"
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:text="26.33"
+            android:gravity="center"
+            android:fontFamily="@font/betm"
+            android:textSize="@dimen/size_14"
+            android:layout_gravity="center"
+            android:textColor="@color/darkgrey"
+
+            android:layout_marginBottom="@dimen/size_5"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

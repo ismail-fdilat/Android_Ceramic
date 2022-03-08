@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".fragment.WishlistFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_46"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:background="@color/colorappbar"
+        >
+
+        <TextView
+            android:id="@+id/icon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/betm"
+            android:background="@color/colorappbar"
+            android:textColor="@color/white"
+
+            android:text="weekly deals" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categry"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size_3"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/nodata_wishlist"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/size_18"
+            android:layout_width="match_parent"
+            android:text="@string/no_data_found"
+            android:fontFamily="@font/betm"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/weekly"></ImageView>
+
+    <TextView
+        android:id="@+id/next"
+        android:textColor="@color/darkgrey"
+        android:textSize="@dimen/size_18"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:backgroundTint="#00FFFFFF"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/betm"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:drawableRight="@drawable/next_next"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OTPActvity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#579C1313"
+                android:backgroundTintMode="src_over"
+                android:background="@drawable/ceramiclogo"
+                android:layout_marginBottom="32sp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+
+                    android:background="#111A22">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/size_10"
+                        android:src="@drawable/ceramiclogo">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/size_30"
+                    android:layout_margin="@dimen/size_5"
+                    android:layout_height="@dimen/size_30"
+                    app:srcCompat="@drawable/ic_arrow_back"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imv_backfgpass" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_forgetpass"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/darkgrey"
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_70"
+                android:layout_marginBottom="@dimen/size_10"
+                android:text="@string/title_otp1"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_createac"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/darkgrey"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10"
+                android:text="@string/title_otp2"
+
+                />
+
+
+
+
+            <EditText
+                android:id="@+id/edt_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edt_bg"
+                android:drawableRight="@drawable/ic_email"
+                android:ems="15"
+                android:fontFamily="@font/betm"
+                android:hint="@string/title_otp3"
+                android:inputType="number"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/size_14"
+                android:gravity="left"
+                android:drawablePadding="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_30"
+                android:textColor="@color/darkgrey"
+                android:textColorHint="@color/lgrey"
+                android:textSize="@dimen/size_14" />
+
+
+
+
+            <TextView
+                android:id="@+id/tv_nextotp"
+                android:fontFamily="@font/betm"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:padding="@dimen/size_14"
+
+                android:background="@color/colorappbar"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_10"
+                android:text="@string/next"
+
+                />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorappbar"
+                android:layout_marginTop="@dimen/size_40"
+                android:layout_marginBottom="@dimen/size_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:weightSum="1"
+                >
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
